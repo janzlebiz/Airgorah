@@ -1,0 +1,17 @@
+[package]
+name = "airgorah-android-bridge"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Safe JNI bridge exposing Airgorah Mobile's Rust core to Android"
+
+[lib]
+name = "airgorah_core"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+airgorah-common.workspace = true
+airgorah-analysis.workspace = true
+jni.workspace = true
+serde.workspace = true
+serde_json.workspace = true

@@ -1,0 +1,19 @@
+[package]
+name = "airgorah-analysis"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+description = "Defensive 802.11 PCAP/handshake/PMKID analysis, OUI vendor lookup, and password strength auditing"
+
+[dependencies]
+airgorah-common.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+lazy_static.workspace = true
+libwifi.workspace = true
+radiotap.workspace = true
+
+[build-dependencies]
+serde = { version = "1", features = ["derive"] }
+csv = "1.4"
